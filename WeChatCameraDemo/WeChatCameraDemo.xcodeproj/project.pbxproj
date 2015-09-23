@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		456079601B8E9D8D00AC51E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4560795F1B8E9D8D00AC51E5 /* main.m */; };
+		456079631B8E9D8D00AC51E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 456079621B8E9D8D00AC51E5 /* AppDelegate.m */; };
+		456079661B8E9D8D00AC51E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 456079651B8E9D8D00AC51E5 /* ViewController.m */; };
+		456079691B8E9D8D00AC51E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456079671B8E9D8D00AC51E5 /* Main.storyboard */; };
+		4560796B1B8E9D8D00AC51E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4560796A1B8E9D8D00AC51E5 /* Images.xcassets */; };
+		4560796E1B8E9D8D00AC51E5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4560796C1B8E9D8D00AC51E5 /* LaunchScreen.xib */; };
+		4560797A1B8E9D8D00AC51E5 /* WeChatCameraDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 456079791B8E9D8D00AC51E5 /* WeChatCameraDemoTests.m */; };
+		456079851B8EA0AD00AC51E5 /* FWRMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 456079841B8EA0AD00AC51E5 /* FWRMenuController.m */; };
+		456079881B8EDCA800AC51E5 /* camera_icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 456079871B8EDCA800AC51E5 /* camera_icon.jpg */; };
+		4561B5BA1B90016C00149DF9 /* FWRAlbumController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4561B5B91B90016C00149DF9 /* FWRAlbumController.m */; };
+		4561B5BD1B902D1800149DF9 /* ShowPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4561B5BC1B902D1800149DF9 /* ShowPhotoCell.m */; };
+		4561B5C41B90386D00149DF9 /* AssetHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4561B5C31B90386D00149DF9 /* AssetHelper.m */; };
+		4561B5CB1B9043BB00149DF9 /* unChoose.png in Resources */ = {isa = PBXBuildFile; fileRef = 4561B5C91B9043BB00149DF9 /* unChoose.png */; };
+		4561B5CC1B9043BB00149DF9 /* choose.png in Resources */ = {isa = PBXBuildFile; fileRef = 4561B5CA1B9043BB00149DF9 /* choose.png */; };
+		4561B5D51B90579E00149DF9 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4561B5D41B90579E00149DF9 /* TableViewController.m */; };
+		4561B5D81B905B3900149DF9 /* ShowAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4561B5D71B905B3900149DF9 /* ShowAlbumCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		456079741B8E9D8D00AC51E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 456079521B8E9D8D00AC51E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 456079591B8E9D8D00AC51E5;
+			remoteInfo = WeChatCameraDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4560795A1B8E9D8D00AC51E5 /* WeChatCameraDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChatCameraDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4560795E1B8E9D8D00AC51E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4560795F1B8E9D8D00AC51E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		456079611B8E9D8D00AC51E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		456079621B8E9D8D00AC51E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		456079641B8E9D8D00AC51E5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		456079651B8E9D8D00AC51E5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		456079681B8E9D8D00AC51E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4560796A1B8E9D8D00AC51E5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4560796D1B8E9D8D00AC51E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		456079731B8E9D8D00AC51E5 /* WeChatCameraDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeChatCameraDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		456079781B8E9D8D00AC51E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		456079791B8E9D8D00AC51E5 /* WeChatCameraDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeChatCameraDemoTests.m; sourceTree = "<group>"; };
+		456079831B8EA0AD00AC51E5 /* FWRMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FWRMenuController.h; path = WeChatCameraDemo/FWRMenuController.h; sourceTree = SOURCE_ROOT; };
+		456079841B8EA0AD00AC51E5 /* FWRMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FWRMenuController.m; path = WeChatCameraDemo/FWRMenuController.m; sourceTree = SOURCE_ROOT; };
+		456079861B8EA35600AC51E5 /* MyConst.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyConst.pch; sourceTree = "<group>"; };
+		456079871B8EDCA800AC51E5 /* camera_icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = camera_icon.jpg; sourceTree = "<group>"; };
+		4561B5B81B90016C00149DF9 /* FWRAlbumController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWRAlbumController.h; sourceTree = "<group>"; };
+		4561B5B91B90016C00149DF9 /* FWRAlbumController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWRAlbumController.m; sourceTree = "<group>"; };
+		4561B5BB1B902D1800149DF9 /* ShowPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowPhotoCell.h; sourceTree = "<group>"; };
+		4561B5BC1B902D1800149DF9 /* ShowPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowPhotoCell.m; sourceTree = "<group>"; };
+		4561B5C21B90386D00149DF9 /* AssetHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetHelper.h; sourceTree = "<group>"; };
+		4561B5C31B90386D00149DF9 /* AssetHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetHelper.m; sourceTree = "<group>"; };
+		4561B5C91B9043BB00149DF9 /* unChoose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unChoose.png; sourceTree = "<group>"; };
+		4561B5CA1B9043BB00149DF9 /* choose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = choose.png; sourceTree = "<group>"; };
+		4561B5D31B90579E00149DF9 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		4561B5D41B90579E00149DF9 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		4561B5D61B905B3900149DF9 /* ShowAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowAlbumCell.h; sourceTree = "<group>"; };
+		4561B5D71B905B3900149DF9 /* ShowAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowAlbumCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		456079571B8E9D8D00AC51E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		456079701B8E9D8D00AC51E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		456079511B8E9D8D00AC51E5 = {
+			isa = PBXGroup;
+			children = (
+				4560795C1B8E9D8D00AC51E5 /* WeChatCameraDemo */,
+				456079761B8E9D8D00AC51E5 /* WeChatCameraDemoTests */,
+				4560795B1B8E9D8D00AC51E5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4560795B1B8E9D8D00AC51E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4560795A1B8E9D8D00AC51E5 /* WeChatCameraDemo.app */,
+				456079731B8E9D8D00AC51E5 /* WeChatCameraDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4560795C1B8E9D8D00AC51E5 /* WeChatCameraDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4561B5B71B90015900149DF9 /* FWRAlbum */,
+				456079891B8F0D1800AC51E5 /* FWRMenuController */,
+				456079871B8EDCA800AC51E5 /* camera_icon.jpg */,
+				4561B5C91B9043BB00149DF9 /* unChoose.png */,
+				4561B5CA1B9043BB00149DF9 /* choose.png */,
+				456079611B8E9D8D00AC51E5 /* AppDelegate.h */,
+				456079621B8E9D8D00AC51E5 /* AppDelegate.m */,
+				456079641B8E9D8D00AC51E5 /* ViewController.h */,
+				456079651B8E9D8D00AC51E5 /* ViewController.m */,
+				456079671B8E9D8D00AC51E5 /* Main.storyboard */,
+				4560796A1B8E9D8D00AC51E5 /* Images.xcassets */,
+				4560796C1B8E9D8D00AC51E5 /* LaunchScreen.xib */,
+				4560795D1B8E9D8D00AC51E5 /* Supporting Files */,
+				456079861B8EA35600AC51E5 /* MyConst.pch */,
+			);
+			path = WeChatCameraDemo;
+			sourceTree = "<group>";
+		};
+		4560795D1B8E9D8D00AC51E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4560795E1B8E9D8D00AC51E5 /* Info.plist */,
+				4560795F1B8E9D8D00AC51E5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		456079761B8E9D8D00AC51E5 /* WeChatCameraDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				456079791B8E9D8D00AC51E5 /* WeChatCameraDemoTests.m */,
+				456079771B8E9D8D00AC51E5 /* Supporting Files */,
+			);
+			path = WeChatCameraDemoTests;
+			sourceTree = "<group>";
+		};
+		456079771B8E9D8D00AC51E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				456079781B8E9D8D00AC51E5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		456079891B8F0D1800AC51E5 /* FWRMenuController */ = {
+			isa = PBXGroup;
+			children = (
+				456079831B8EA0AD00AC51E5 /* FWRMenuController.h */,
+				456079841B8EA0AD00AC51E5 /* FWRMenuController.m */,
+			);
+			path = FWRMenuController;
+			sourceTree = "<group>";
+		};
+		4561B5B71B90015900149DF9 /* FWRAlbum */ = {
+			isa = PBXGroup;
+			children = (
+				4561B5C21B90386D00149DF9 /* AssetHelper.h */,
+				4561B5C31B90386D00149DF9 /* AssetHelper.m */,
+				4561B5B81B90016C00149DF9 /* FWRAlbumController.h */,
+				4561B5B91B90016C00149DF9 /* FWRAlbumController.m */,
+				4561B5BB1B902D1800149DF9 /* ShowPhotoCell.h */,
+				4561B5BC1B902D1800149DF9 /* ShowPhotoCell.m */,
+				4561B5D31B90579E00149DF9 /* TableViewController.h */,
+				4561B5D41B90579E00149DF9 /* TableViewController.m */,
+				4561B5D61B905B3900149DF9 /* ShowAlbumCell.h */,
+				4561B5D71B905B3900149DF9 /* ShowAlbumCell.m */,
+			);
+			path = FWRAlbum;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		456079591B8E9D8D00AC51E5 /* WeChatCameraDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4560797D1B8E9D8D00AC51E5 /* Build configuration list for PBXNativeTarget "WeChatCameraDemo" */;
+			buildPhases = (
+				456079561B8E9D8D00AC51E5 /* Sources */,
+				456079571B8E9D8D00AC51E5 /* Frameworks */,
+				456079581B8E9D8D00AC51E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeChatCameraDemo;
+			productName = WeChatCameraDemo;
+			productReference = 4560795A1B8E9D8D00AC51E5 /* WeChatCameraDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		456079721B8E9D8D00AC51E5 /* WeChatCameraDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 456079801B8E9D8D00AC51E5 /* Build configuration list for PBXNativeTarget "WeChatCameraDemoTests" */;
+			buildPhases = (
+				4560796F1B8E9D8D00AC51E5 /* Sources */,
+				456079701B8E9D8D00AC51E5 /* Frameworks */,
+				456079711B8E9D8D00AC51E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				456079751B8E9D8D00AC51E5 /* PBXTargetDependency */,
+			);
+			name = WeChatCameraDemoTests;
+			productName = WeChatCameraDemoTests;
+			productReference = 456079731B8E9D8D00AC51E5 /* WeChatCameraDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		456079521B8E9D8D00AC51E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "冯伟如";
+				TargetAttributes = {
+					456079591B8E9D8D00AC51E5 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = E9N3BXTLCJ;
+					};
+					456079721B8E9D8D00AC51E5 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = E9N3BXTLCJ;
+						TestTargetID = 456079591B8E9D8D00AC51E5;
+					};
+				};
+			};
+			buildConfigurationList = 456079551B8E9D8D00AC51E5 /* Build configuration list for PBXProject "WeChatCameraDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 456079511B8E9D8D00AC51E5;
+			productRefGroup = 4560795B1B8E9D8D00AC51E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				456079591B8E9D8D00AC51E5 /* WeChatCameraDemo */,
+				456079721B8E9D8D00AC51E5 /* WeChatCameraDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		456079581B8E9D8D00AC51E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4561B5CC1B9043BB00149DF9 /* choose.png in Resources */,
+				456079691B8E9D8D00AC51E5 /* Main.storyboard in Resources */,
+				4561B5CB1B9043BB00149DF9 /* unChoose.png in Resources */,
+				4560796E1B8E9D8D00AC51E5 /* LaunchScreen.xib in Resources */,
+				4560796B1B8E9D8D00AC51E5 /* Images.xcassets in Resources */,
+				456079881B8EDCA800AC51E5 /* camera_icon.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		456079711B8E9D8D00AC51E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		456079561B8E9D8D00AC51E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				456079661B8E9D8D00AC51E5 /* ViewController.m in Sources */,
+				4561B5BD1B902D1800149DF9 /* ShowPhotoCell.m in Sources */,
+				4561B5D81B905B3900149DF9 /* ShowAlbumCell.m in Sources */,
+				456079631B8E9D8D00AC51E5 /* AppDelegate.m in Sources */,
+				4561B5BA1B90016C00149DF9 /* FWRAlbumController.m in Sources */,
+				4561B5C41B90386D00149DF9 /* AssetHelper.m in Sources */,
+				456079851B8EA0AD00AC51E5 /* FWRMenuController.m in Sources */,
+				456079601B8E9D8D00AC51E5 /* main.m in Sources */,
+				4561B5D51B90579E00149DF9 /* TableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4560796F1B8E9D8D00AC51E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4560797A1B8E9D8D00AC51E5 /* WeChatCameraDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		456079751B8E9D8D00AC51E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 456079591B8E9D8D00AC51E5 /* WeChatCameraDemo */;
+			targetProxy = 456079741B8E9D8D00AC51E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		456079671B8E9D8D00AC51E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				456079681B8E9D8D00AC51E5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4560796C1B8E9D8D00AC51E5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4560796D1B8E9D8D00AC51E5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4560797B1B8E9D8D00AC51E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wang Min (T6GSUPA82F)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Wang Min (T6GSUPA82F)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4560797C1B8E9D8D00AC51E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wang Min (T6GSUPA82F)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Wang Min (T6GSUPA82F)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4560797E1B8E9D8D00AC51E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: weiru feng (G9PCJ9VT9A)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: weiru feng (G9PCJ9VT9A)";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WeChatCameraDemo/MyConst.pch";
+				INFOPLIST_FILE = WeChatCameraDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		4560797F1B8E9D8D00AC51E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: weiru feng (G9PCJ9VT9A)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WeChatCameraDemo/MyConst.pch";
+				INFOPLIST_FILE = WeChatCameraDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		456079811B8E9D8D00AC51E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WeChatCameraDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeChatCameraDemo.app/WeChatCameraDemo";
+			};
+			name = Debug;
+		};
+		456079821B8E9D8D00AC51E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WeChatCameraDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeChatCameraDemo.app/WeChatCameraDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		456079551B8E9D8D00AC51E5 /* Build configuration list for PBXProject "WeChatCameraDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4560797B1B8E9D8D00AC51E5 /* Debug */,
+				4560797C1B8E9D8D00AC51E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4560797D1B8E9D8D00AC51E5 /* Build configuration list for PBXNativeTarget "WeChatCameraDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4560797E1B8E9D8D00AC51E5 /* Debug */,
+				4560797F1B8E9D8D00AC51E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		456079801B8E9D8D00AC51E5 /* Build configuration list for PBXNativeTarget "WeChatCameraDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				456079811B8E9D8D00AC51E5 /* Debug */,
+				456079821B8E9D8D00AC51E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 456079521B8E9D8D00AC51E5 /* Project object */;
+}
