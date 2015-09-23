@@ -13,3 +13,5 @@ tip:在FWRMenu里的是点击弹出视图的控件＝。＝
 附上预览图
 ![](http://photo.blog.sina.com.cn/showpic.html#blogid=15377ae580102vyas&url=http://album.sina.com.cn/pic/006dqYOcgy6VEMDEObs3e) 
 ![](http://photo.blog.sina.com.cn/showpic.html#blogid=15377ae580102vyas&url=http://album.sina.com.cn/pic/006dqYOcgy6VEMEcyAH0b)
+
+###也可以来[我的博客](http://blog.sina.com.cn/s/blog_15377ae580102vyas.html "心亦逸风的博客")
