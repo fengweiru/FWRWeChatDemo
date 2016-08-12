@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "FWRMenuController.h"
 #import "FWRAlbumController.h"
+#import "FWRPhotoGroupViewController.h"
 #import <MobileCoreServices/MobileCoreServices.h>
 #import <AVFoundation/AVFoundation.h>
 #import <MediaPlayer/MediaPlayer.h>
@@ -63,9 +64,11 @@
     if (_chooseType != 3) {
         [self presentViewController:self.imagePicker animated:YES completion:nil];
     }else{
+        FWRPhotoGroupViewController *tbVc = [[FWRPhotoGroupViewController alloc] init];
         FWRAlbumController *albumCtrl = [[FWRAlbumController alloc] init];
         albumCtrl.delegate = self;
-        UINavigationController *navCtrl = [[UINavigationController alloc] initWithRootViewController:albumCtrl];
+        UINavigationController *navCtrl = [[UINavigationController alloc] init];
+        [navCtrl setViewControllers:[NSArray arrayWithObjects:tbVc,albumCtrl, nil]];
         [self presentViewController:navCtrl animated:YES completion:nil];
     }
     

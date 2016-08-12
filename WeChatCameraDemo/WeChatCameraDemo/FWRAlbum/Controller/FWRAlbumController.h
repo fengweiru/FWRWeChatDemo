@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AssetsLibrary/AssetsLibrary.h>
 
 @protocol FWRAlbumControllerDelegate <NSObject>
 
@@ -15,6 +16,8 @@
 @end
 
 @interface FWRAlbumController : UIViewController
+
+- (instancetype)initWithPhoto:(ALAssetsGroup *)group;
 
 @property (nonatomic, assign) id<FWRAlbumControllerDelegate> delegate;
 

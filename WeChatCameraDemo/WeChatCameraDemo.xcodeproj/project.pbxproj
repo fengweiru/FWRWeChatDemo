@@ -15,14 +15,11 @@
 		4560796E1B8E9D8D00AC51E5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4560796C1B8E9D8D00AC51E5 /* LaunchScreen.xib */; };
 		4560797A1B8E9D8D00AC51E5 /* WeChatCameraDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 456079791B8E9D8D00AC51E5 /* WeChatCameraDemoTests.m */; };
 		456079851B8EA0AD00AC51E5 /* FWRMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 456079841B8EA0AD00AC51E5 /* FWRMenuController.m */; };
-		456079881B8EDCA800AC51E5 /* camera_icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 456079871B8EDCA800AC51E5 /* camera_icon.jpg */; };
-		4561B5BA1B90016C00149DF9 /* FWRAlbumController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4561B5B91B90016C00149DF9 /* FWRAlbumController.m */; };
-		4561B5BD1B902D1800149DF9 /* ShowPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4561B5BC1B902D1800149DF9 /* ShowPhotoCell.m */; };
-		4561B5C41B90386D00149DF9 /* AssetHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4561B5C31B90386D00149DF9 /* AssetHelper.m */; };
-		4561B5CB1B9043BB00149DF9 /* unChoose.png in Resources */ = {isa = PBXBuildFile; fileRef = 4561B5C91B9043BB00149DF9 /* unChoose.png */; };
-		4561B5CC1B9043BB00149DF9 /* choose.png in Resources */ = {isa = PBXBuildFile; fileRef = 4561B5CA1B9043BB00149DF9 /* choose.png */; };
-		4561B5D51B90579E00149DF9 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4561B5D41B90579E00149DF9 /* TableViewController.m */; };
-		4561B5D81B905B3900149DF9 /* ShowAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4561B5D71B905B3900149DF9 /* ShowAlbumCell.m */; };
+		F72B34721D5DAA1100B6B314 /* FWRAlbumController.m in Sources */ = {isa = PBXBuildFile; fileRef = F72B34651D5DAA1100B6B314 /* FWRAlbumController.m */; };
+		F72B34731D5DAA1100B6B314 /* FWRPhotoGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F72B34671D5DAA1100B6B314 /* FWRPhotoGroupViewController.m */; };
+		F72B34741D5DAA1100B6B314 /* AssetHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F72B346B1D5DAA1100B6B314 /* AssetHelper.m */; };
+		F72B34751D5DAA1100B6B314 /* ShowAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F72B346F1D5DAA1100B6B314 /* ShowAlbumCell.m */; };
+		F72B34761D5DAA1100B6B314 /* ShowPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F72B34711D5DAA1100B6B314 /* ShowPhotoCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,19 +49,17 @@
 		456079831B8EA0AD00AC51E5 /* FWRMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FWRMenuController.h; path = WeChatCameraDemo/FWRMenuController.h; sourceTree = SOURCE_ROOT; };
 		456079841B8EA0AD00AC51E5 /* FWRMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FWRMenuController.m; path = WeChatCameraDemo/FWRMenuController.m; sourceTree = SOURCE_ROOT; };
 		456079861B8EA35600AC51E5 /* MyConst.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyConst.pch; sourceTree = "<group>"; };
-		456079871B8EDCA800AC51E5 /* camera_icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = camera_icon.jpg; sourceTree = "<group>"; };
-		4561B5B81B90016C00149DF9 /* FWRAlbumController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWRAlbumController.h; sourceTree = "<group>"; };
-		4561B5B91B90016C00149DF9 /* FWRAlbumController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWRAlbumController.m; sourceTree = "<group>"; };
-		4561B5BB1B902D1800149DF9 /* ShowPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowPhotoCell.h; sourceTree = "<group>"; };
-		4561B5BC1B902D1800149DF9 /* ShowPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowPhotoCell.m; sourceTree = "<group>"; };
-		4561B5C21B90386D00149DF9 /* AssetHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetHelper.h; sourceTree = "<group>"; };
-		4561B5C31B90386D00149DF9 /* AssetHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetHelper.m; sourceTree = "<group>"; };
-		4561B5C91B9043BB00149DF9 /* unChoose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unChoose.png; sourceTree = "<group>"; };
-		4561B5CA1B9043BB00149DF9 /* choose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = choose.png; sourceTree = "<group>"; };
-		4561B5D31B90579E00149DF9 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
-		4561B5D41B90579E00149DF9 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
-		4561B5D61B905B3900149DF9 /* ShowAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowAlbumCell.h; sourceTree = "<group>"; };
-		4561B5D71B905B3900149DF9 /* ShowAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowAlbumCell.m; sourceTree = "<group>"; };
+		F72B34641D5DAA1100B6B314 /* FWRAlbumController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWRAlbumController.h; sourceTree = "<group>"; };
+		F72B34651D5DAA1100B6B314 /* FWRAlbumController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWRAlbumController.m; sourceTree = "<group>"; };
+		F72B34661D5DAA1100B6B314 /* FWRPhotoGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWRPhotoGroupViewController.h; sourceTree = "<group>"; };
+		F72B34671D5DAA1100B6B314 /* FWRPhotoGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWRPhotoGroupViewController.m; sourceTree = "<group>"; };
+		F72B346A1D5DAA1100B6B314 /* AssetHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetHelper.h; sourceTree = "<group>"; };
+		F72B346B1D5DAA1100B6B314 /* AssetHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetHelper.m; sourceTree = "<group>"; };
+		F72B346C1D5DAA1100B6B314 /* FWRAlbumConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWRAlbumConfigure.h; sourceTree = "<group>"; };
+		F72B346E1D5DAA1100B6B314 /* ShowAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowAlbumCell.h; sourceTree = "<group>"; };
+		F72B346F1D5DAA1100B6B314 /* ShowAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowAlbumCell.m; sourceTree = "<group>"; };
+		F72B34701D5DAA1100B6B314 /* ShowPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowPhotoCell.h; sourceTree = "<group>"; };
+		F72B34711D5DAA1100B6B314 /* ShowPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowPhotoCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,9 +103,6 @@
 			children = (
 				4561B5B71B90015900149DF9 /* FWRAlbum */,
 				456079891B8F0D1800AC51E5 /* FWRMenuController */,
-				456079871B8EDCA800AC51E5 /* camera_icon.jpg */,
-				4561B5C91B9043BB00149DF9 /* unChoose.png */,
-				4561B5CA1B9043BB00149DF9 /* choose.png */,
 				456079611B8E9D8D00AC51E5 /* AppDelegate.h */,
 				456079621B8E9D8D00AC51E5 /* AppDelegate.m */,
 				456079641B8E9D8D00AC51E5 /* ViewController.h */,
@@ -162,18 +154,51 @@
 		4561B5B71B90015900149DF9 /* FWRAlbum */ = {
 			isa = PBXGroup;
 			children = (
-				4561B5C21B90386D00149DF9 /* AssetHelper.h */,
-				4561B5C31B90386D00149DF9 /* AssetHelper.m */,
-				4561B5B81B90016C00149DF9 /* FWRAlbumController.h */,
-				4561B5B91B90016C00149DF9 /* FWRAlbumController.m */,
-				4561B5BB1B902D1800149DF9 /* ShowPhotoCell.h */,
-				4561B5BC1B902D1800149DF9 /* ShowPhotoCell.m */,
-				4561B5D31B90579E00149DF9 /* TableViewController.h */,
-				4561B5D41B90579E00149DF9 /* TableViewController.m */,
-				4561B5D61B905B3900149DF9 /* ShowAlbumCell.h */,
-				4561B5D71B905B3900149DF9 /* ShowAlbumCell.m */,
+				F72B34631D5DAA1100B6B314 /* Controller */,
+				F72B34681D5DAA1100B6B314 /* Model */,
+				F72B34691D5DAA1100B6B314 /* Other */,
+				F72B346D1D5DAA1100B6B314 /* View */,
 			);
 			path = FWRAlbum;
+			sourceTree = "<group>";
+		};
+		F72B34631D5DAA1100B6B314 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F72B34641D5DAA1100B6B314 /* FWRAlbumController.h */,
+				F72B34651D5DAA1100B6B314 /* FWRAlbumController.m */,
+				F72B34661D5DAA1100B6B314 /* FWRPhotoGroupViewController.h */,
+				F72B34671D5DAA1100B6B314 /* FWRPhotoGroupViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F72B34681D5DAA1100B6B314 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F72B34691D5DAA1100B6B314 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F72B346A1D5DAA1100B6B314 /* AssetHelper.h */,
+				F72B346B1D5DAA1100B6B314 /* AssetHelper.m */,
+				F72B346C1D5DAA1100B6B314 /* FWRAlbumConfigure.h */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		F72B346D1D5DAA1100B6B314 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F72B346E1D5DAA1100B6B314 /* ShowAlbumCell.h */,
+				F72B346F1D5DAA1100B6B314 /* ShowAlbumCell.m */,
+				F72B34701D5DAA1100B6B314 /* ShowPhotoCell.h */,
+				F72B34711D5DAA1100B6B314 /* ShowPhotoCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,12 +283,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4561B5CC1B9043BB00149DF9 /* choose.png in Resources */,
 				456079691B8E9D8D00AC51E5 /* Main.storyboard in Resources */,
-				4561B5CB1B9043BB00149DF9 /* unChoose.png in Resources */,
 				4560796E1B8E9D8D00AC51E5 /* LaunchScreen.xib in Resources */,
 				4560796B1B8E9D8D00AC51E5 /* Images.xcassets in Resources */,
-				456079881B8EDCA800AC51E5 /* camera_icon.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,14 +304,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				456079661B8E9D8D00AC51E5 /* ViewController.m in Sources */,
-				4561B5BD1B902D1800149DF9 /* ShowPhotoCell.m in Sources */,
-				4561B5D81B905B3900149DF9 /* ShowAlbumCell.m in Sources */,
 				456079631B8E9D8D00AC51E5 /* AppDelegate.m in Sources */,
-				4561B5BA1B90016C00149DF9 /* FWRAlbumController.m in Sources */,
-				4561B5C41B90386D00149DF9 /* AssetHelper.m in Sources */,
+				F72B34721D5DAA1100B6B314 /* FWRAlbumController.m in Sources */,
+				F72B34731D5DAA1100B6B314 /* FWRPhotoGroupViewController.m in Sources */,
+				F72B34761D5DAA1100B6B314 /* ShowPhotoCell.m in Sources */,
+				F72B34751D5DAA1100B6B314 /* ShowAlbumCell.m in Sources */,
+				F72B34741D5DAA1100B6B314 /* AssetHelper.m in Sources */,
 				456079851B8EA0AD00AC51E5 /* FWRMenuController.m in Sources */,
 				456079601B8E9D8D00AC51E5 /* main.m in Sources */,
-				4561B5D51B90579E00149DF9 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

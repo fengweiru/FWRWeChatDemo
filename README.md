@@ -7,11 +7,14 @@
 
 这个控件大致就和微信中朋友圈发消息的那个弹窗，感觉这个很实用，就试着去写了，然后后面又加上了拍照录像和从相册中选图片的功能。拍照和录像用的是UIImagePickerController，都是系统的，主要精力是花在了自制的相册，从系统相册中读取照片和相册并显示。 
 
+##TODO:
+1.相册模块完善（尽量做出微信效果）    
+2.小视屏模块完善 
 
 tip:在FWRMenu里的是点击弹出视图的控件＝。＝
 
-附上预览图
-![](http://photo.blog.sina.com.cn/showpic.html#blogid=15377ae580102vyas&url=http://album.sina.com.cn/pic/006dqYOcgy6VEMDEObs3e) 
-![](http://photo.blog.sina.com.cn/showpic.html#blogid=15377ae580102vyas&url=http://album.sina.com.cn/pic/006dqYOcgy6VEMEcyAH0b)
+###一些心里话:
+前段时间一直在忙公司的项目，后来有时间了却也一直在浪费，人要时刻自省。接下来我会一直完善这个项目的。（等做完这个发送消息的模块在做其他的模块），有志同道合的欢迎一起。  
+QQ：245596599😊
 
 ###也可以来[我的博客](http://blog.sina.com.cn/s/blog_15377ae580102vyas.html "心亦逸风的博客")

@@ -1,22 +1,29 @@
 //
-//  TableViewController.m
+//  FWRPhotoGroupViewController.m
 //  WeChatCameraDemo
 //
 //  Created by 冯伟如 on 15/8/28.
 //  Copyright (c) 2015年 冯伟如. All rights reserved.
 //
 
-#import "TableViewController.h"
+#import "FWRPhotoGroupViewController.h"
 #import "ShowAlbumCell.h"
+#import "FWRAlbumController.h"
+#import "FWRAlbumConfigure.h"
 
 #define REUSECELLID @"cellId"
 
-@interface TableViewController ()
+@interface FWRPhotoGroupViewController ()
 @property (nonatomic, strong) ALAssetsLibrary *assetsLibrary;
 @property (nonatomic, strong) NSMutableArray *albums;
 @end
 
-@implementation TableViewController
+@implementation FWRPhotoGroupViewController
+
+- (void)dealloc
+{
+    
+}
 
 - (instancetype)initWithStyle:(UITableViewStyle)style
 {
@@ -59,13 +66,14 @@
         }
     };
     
+    WeakSelf;
     ALAssetsLibraryGroupsEnumerationResultsBlock listGroupBlock = ^(ALAssetsGroup *group, BOOL *stop) {
         ALAssetsFilter *onlyPhoyosFilter = [ALAssetsFilter allPhotos];
         [group setAssetsFilter:onlyPhoyosFilter];
         if ([group numberOfAssets] > 0) {
-            [self.albums addObject:group];
+            [weakSelf.albums addObject:group];
         }else {
-            [self.tableView reloadData];
+            [weakSelf.tableView reloadData];
         }
     };
     
@@ -103,11 +111,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+//    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
     ALAssetsGroup *group = [_albums objectAtIndex:indexPath.row];
-    if (self.delegate) {
-        [self.delegate selectAlbum:group];
-    }
+//    if (self.delegate) {
+//        [self.delegate selectAlbum:group];
+//    }
+    FWRAlbumController *vc = [[FWRAlbumController alloc] initWithPhoto:group];
+    [self.navigationController pushViewController:vc animated:true];
 }
 
 @end

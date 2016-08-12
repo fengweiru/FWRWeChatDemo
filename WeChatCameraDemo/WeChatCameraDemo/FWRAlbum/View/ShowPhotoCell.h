@@ -21,7 +21,7 @@
 //照片的位置
 @property (nonatomic, assign) NSInteger row;
 //代理
-@property (nonatomic, retain) id<ShowPhotoCellDelegate> delegate;
+@property (nonatomic, assign) id<ShowPhotoCellDelegate> delegate;
 
 - (void)configWithImage:(UIImage *)image;
 

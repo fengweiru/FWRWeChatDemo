@@ -9,13 +9,16 @@
 #import "FWRAlbumController.h"
 #import "ShowPhotoCell.h"
 #import "AssetHelper.h"
-#import "TableViewController.h"
-#import <AssetsLibrary/AssetsLibrary.h>
+#import "FWRAlbumConfigure.h"
 
 #define CELLLENGTH (MAINSCREEN.size.width-25)/4
 #define kCELLReuseId (@"collectionCellId")
 
-@interface FWRAlbumController ()<UICollectionViewDataSource,UICollectionViewDelegate,ShowPhotoCellDelegate,SelectAlbumDelegate>
+
+@interface FWRAlbumController ()<UICollectionViewDataSource,UICollectionViewDelegate,ShowPhotoCellDelegate>
+{
+    ALAssetsGroup *_group;
+}
 //UICollectionView用来显示图片
 @property (nonatomic, strong) UICollectionView *collectionView;
 //显示当前选择照片数量
@@ -35,6 +38,21 @@
 
 @implementation FWRAlbumController{
     NSMutableArray *_selectPhotoNames;
+}
+
+- (void)dealloc
+{
+
+}
+
+- (instancetype)initWithPhoto:(ALAssetsGroup *)group
+{
+    if (self = [super init]) {
+        
+        _group = group;
+        
+    }
+    return self;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -68,17 +86,23 @@
     self.selectPhotos = [[NSMutableArray alloc] init];
     _selectPhotoNames = [[NSMutableArray alloc] init];
     
+    if (_group) {
+        [self showPhoto:_group];
+        return;
+    }
+    
     NSUInteger groupTypes = ALAssetsGroupSavedPhotos;
     
+    WeakSelf;
     ALAssetsLibraryGroupsEnumerationResultsBlock listGroupBlock = ^(ALAssetsGroup *group, BOOL *stop) {
         ALAssetsFilter *onlyPhotosFilter = [ALAssetsFilter allPhotos];
         [group setAssetsFilter:onlyPhotosFilter];
         
         if ([group numberOfAssets] > 0) {
-            [self showPhoto:group];
+            [weakSelf showPhoto:group];
         }else{
             NSLog(@"读取相册完毕");
-            [self.collectionView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
+            [weakSelf.collectionView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
         }
     };
     
@@ -96,9 +120,10 @@
                 [self.photos removeAllObjects];
             }
 //        }
+        WeakSelf;
             ALAssetsGroupEnumerationResultsBlock assetsEnumerationBlock = ^(ALAsset *result, NSUInteger index, BOOL *stop) {
                 if (result) {
-                    [self.photos addObject:result];
+                    [weakSelf.photos addObject:result];
                 }else{
                     
                 }
@@ -119,33 +144,25 @@
     [cancelButton addTarget:self action:@selector(cancelClick) forControlEvents:UIControlEventTouchUpInside];
     cancelButton.frame = CGRectMake(0, 4, 40, 40);
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView:cancelButton];
-    self.navigationItem.leftBarButtonItem = leftItem;
+    self.navigationItem.rightBarButtonItem = leftItem;
     
     UIButton *chooseAlbumButton = [UIButton buttonWithType:UIButtonTypeSystem];
     [chooseAlbumButton setTitle:@"相册" forState:UIControlStateNormal];
     [chooseAlbumButton addTarget:self action:@selector(chooseAlbumClick) forControlEvents:UIControlEventTouchUpInside];
     chooseAlbumButton.frame = CGRectMake(0, 4, 40, 40);
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:chooseAlbumButton];
-    self.navigationItem.rightBarButtonItem = rightItem;
+    self.navigationItem.leftBarButtonItem = rightItem;
 }
 
 #pragma mark - 取消方法
 - (void)cancelClick {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - 选择相册方法
 - (void)chooseAlbumClick {
-    TableViewController *albumTableView = [[TableViewController alloc] init];
-    UINavigationController *navCtrl = [[UINavigationController alloc] initWithRootViewController:albumTableView];
-    albumTableView.delegate = self;
-    [self.navigationController presentViewController:navCtrl animated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:true];
     [self.selectPhotos removeAllObjects];
-}
-
-#pragma mark - 更换相册代理
-- (void)selectAlbum:(ALAssetsGroup *)album {
-    [self showPhoto:album];
 }
 
 #pragma mark - 创建UICollectionView和Label、Button
