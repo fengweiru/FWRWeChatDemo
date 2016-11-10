@@ -10,6 +10,7 @@
 #import "ShowPhotoCell.h"
 #import "AssetHelper.h"
 #import "FWRAlbumConfigure.h"
+#import "FWRPhotoBrowserViewController.h"
 
 #define CELLLENGTH (MAINSCREEN.size.width-25)/4
 #define kCELLReuseId (@"collectionCellId")
@@ -230,32 +231,8 @@
     return cell;
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    ShowPhotoCell *cell = (ShowPhotoCell *)[collectionView cellForItemAtIndexPath:indexPath];
-    if (cell.selectButton.selected == NO) {
-        cell.selectButton.selected = YES;
-        ALAsset *asset = self.photos[indexPath.row];
-        [self.selectPhotos addObject:asset];
-        [_selectPhotoNames addObject:[asset valueForProperty:ALAssetPropertyAssetURL]];
-    }else {
-        cell.selectButton.selected = NO;
-        ALAsset *asset = self.photos[indexPath.row];
-        for (ALAsset *a in self.selectPhotos) {
-            NSString *strA = [a valueForProperty:ALAssetPropertyAssetURL];
-            NSString *strAsset = [asset valueForProperty:ALAssetPropertyAssetURL];
-            if ([strA isEqual:strAsset]) {
-                [self.selectPhotos removeObject:a];
-                break;
-            }
-        }
-        
-        [_selectPhotoNames removeObject:[asset valueForProperty:ALAssetPropertyAssetURL]];
-    }
-    
-    if (self.selectPhotos.count == 0) {
-        self.showNumLabel.text = @"请选择照片";
-    }else {
-        self.showNumLabel.text = [NSString stringWithFormat:@"已经选择%lu张照片",self.selectPhotos.count];
-    }
+    FWRPhotoBrowserViewController *vc = [[FWRPhotoBrowserViewController alloc] initWithPhotoArray:[NSArray arrayWithArray:self.photos] atIndex:indexPath.row];
+    [self.navigationController pushViewController:vc animated:true];
 }
 
 #pragma mark - ShowPhotoCell代理

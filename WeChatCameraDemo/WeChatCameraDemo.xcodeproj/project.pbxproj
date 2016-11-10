@@ -20,6 +20,7 @@
 		F72B34741D5DAA1100B6B314 /* AssetHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F72B346B1D5DAA1100B6B314 /* AssetHelper.m */; };
 		F72B34751D5DAA1100B6B314 /* ShowAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F72B346F1D5DAA1100B6B314 /* ShowAlbumCell.m */; };
 		F72B34761D5DAA1100B6B314 /* ShowPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F72B34711D5DAA1100B6B314 /* ShowPhotoCell.m */; };
+		F785B4AE1DCC6D4B00EC98D0 /* FWRPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F785B4AD1DCC6D4B00EC98D0 /* FWRPhotoBrowserViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		F72B346F1D5DAA1100B6B314 /* ShowAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowAlbumCell.m; sourceTree = "<group>"; };
 		F72B34701D5DAA1100B6B314 /* ShowPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowPhotoCell.h; sourceTree = "<group>"; };
 		F72B34711D5DAA1100B6B314 /* ShowPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowPhotoCell.m; sourceTree = "<group>"; };
+		F785B4AC1DCC6D4B00EC98D0 /* FWRPhotoBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWRPhotoBrowserViewController.h; sourceTree = "<group>"; };
+		F785B4AD1DCC6D4B00EC98D0 /* FWRPhotoBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWRPhotoBrowserViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +172,8 @@
 				F72B34651D5DAA1100B6B314 /* FWRAlbumController.m */,
 				F72B34661D5DAA1100B6B314 /* FWRPhotoGroupViewController.h */,
 				F72B34671D5DAA1100B6B314 /* FWRPhotoGroupViewController.m */,
+				F785B4AC1DCC6D4B00EC98D0 /* FWRPhotoBrowserViewController.h */,
+				F785B4AD1DCC6D4B00EC98D0 /* FWRPhotoBrowserViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -311,6 +316,7 @@
 				F72B34751D5DAA1100B6B314 /* ShowAlbumCell.m in Sources */,
 				F72B34741D5DAA1100B6B314 /* AssetHelper.m in Sources */,
 				456079851B8EA0AD00AC51E5 /* FWRMenuController.m in Sources */,
+				F785B4AE1DCC6D4B00EC98D0 /* FWRPhotoBrowserViewController.m in Sources */,
 				456079601B8E9D8D00AC51E5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

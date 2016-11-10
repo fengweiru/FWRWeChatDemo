@@ -65,6 +65,7 @@
         [self presentViewController:self.imagePicker animated:YES completion:nil];
     }else{
         FWRPhotoGroupViewController *tbVc = [[FWRPhotoGroupViewController alloc] init];
+        tbVc.delegatevc = self;
         FWRAlbumController *albumCtrl = [[FWRAlbumController alloc] init];
         albumCtrl.delegate = self;
         UINavigationController *navCtrl = [[UINavigationController alloc] init];

@@ -11,4 +11,7 @@
 
 #define WeakSelf __weak typeof(self) weakSelf = self;
 
+#define KScreenH [[UIScreen mainScreen] bounds].size.height
+#define KscreenW [[UIScreen mainScreen] bounds].size.width
+
 #endif /* FWRAlbumConfigure_h */

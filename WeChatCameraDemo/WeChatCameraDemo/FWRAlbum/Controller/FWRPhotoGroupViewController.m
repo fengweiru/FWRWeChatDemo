@@ -117,6 +117,7 @@
 //        [self.delegate selectAlbum:group];
 //    }
     FWRAlbumController *vc = [[FWRAlbumController alloc] initWithPhoto:group];
+    vc.delegate = self.delegatevc;
     [self.navigationController pushViewController:vc animated:true];
 }
 

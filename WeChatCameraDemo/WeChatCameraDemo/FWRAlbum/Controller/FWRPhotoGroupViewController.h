@@ -11,4 +11,6 @@
 
 @interface FWRPhotoGroupViewController : UITableViewController
 
+@property (nonatomic, assign) id delegatevc;
+
 @end
